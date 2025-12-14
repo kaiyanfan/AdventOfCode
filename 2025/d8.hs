@@ -2,9 +2,8 @@ import Data.List (group, sort, sortOn)
 import Data.List.Split (splitOn)
 import Data.Ord (Down(..))
 
-main :: IO ()
 main = do
-    input <- readFile "input.txt"
+    input <- getContents
     print (solve1 input)
     print (solve2 input)
 

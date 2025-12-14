@@ -1,6 +1,5 @@
-main :: IO ()
 main = do
-    input <- readFile "input.txt"
+    input <- getContents
     print (solve1 input)
     print (solve2 input)
 

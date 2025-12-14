@@ -2,9 +2,8 @@ import Data.Char (isSpace)
 import Data.List.Split (splitOn)
 import Data.List (transpose)
 
-main :: IO ()
 main = do
-    input <- readFile "input.txt"
+    input <- getContents
     print (solve1 input)
     print (solve2 input)
 
